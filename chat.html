@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to Kokoa Clone</title>
+    <title>Chat - Kokoa Clone</title>
   </head>
   <body>
     <div class="status-bar">
@@ -21,20 +21,63 @@
         <i class="fas fa-bolt"></i>
       </div>
     </div>
-
-    <header class="welcome-header">
-      <h1 class="welcome-header__title">Welcome to Kokoa clone</h1>
-      <p class="welcome-header__text">
-        If you have a Kakao Account, log in with your email or phone number.
-      </p>
+    <header class="screen__header">
+      <h1 class="screen__header__title">Chats</h1>
+      <div class="screen__header__icons">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="far fa-comment-dots fa-lg"></i></span>
+        <span><i class="fas fa-music fa-lg"></i></span>
+        <span><i class="fas fa-cog fa-lg"></i></span>
+      </div>
     </header>
 
-    <form action="friends.html" method="GET" id="login-form">
-      <input name="username" type="text" placeholder="Email or phone" />
-      <input name="password" type="password" placeholder="Password" />
-      <input type="submit" value="Log in" />
-      <a href="#">Find Kokoa Account or Password</a>
-    </form>
+    <main class="main-screen">
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+            src="https://avatars1.githubusercontent.com/u/3612017"
+            class="user-component__avatar user-component__avatar"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title">Nicolas</h4>
+            <h6 class="user-component__subtitle">
+              Please check My Kokoa Account Info
+            </h6>
+          </div>
+        </div>
+        <div class="user-component__column">
+          <span class="user-component__time">21:22</span>
+          <div class="badge">1</div>
+        </div>
+      </div>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html"
+            ><i class="far fa-user fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chat.html"
+            ><span class="nav__notification badge">1</span
+            ><i class="fas fa-comment fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html"
+            ><i class="fas fa-search fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html"
+            ><span class="nav__notification nav__dot badge badge__dot"></span
+            ><i class="fas fa-ellipsis-h fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
     <script
       src="https://kit.fontawesome.com/c1f4659cb4.js"
       crossorigin="anonymous"
